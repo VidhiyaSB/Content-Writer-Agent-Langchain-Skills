@@ -9,6 +9,13 @@ A "Progressive Disclosure" Content Writing Agent built with LangChain and LangGr
 - **LangGraph Architecture**: Uses a graph-based flow for agent execution.
 - **Streaming Output**: See real-time tool calls and responses.
 
+## Why this Architecture?
+
+Traditional agents often dump all instructions into the system prompt at once. This approach solves two problems:
+
+1.  **Token Efficiency**: You don't pay for the tokens of 20+ skills when you only use one. The agent starts with a lightweight "menu" of options.
+2.  **Context clarity**: The agent isn't confused by conflicting instructions from different skills. It loads *exactly* what it needs, when it needs it.
+
 ## Prerequisites
 
 - Python 3.9+
