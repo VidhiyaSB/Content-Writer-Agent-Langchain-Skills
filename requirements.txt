@@ -1,0 +1,7 @@
+langchain
+langgraph
+langchain-mistralai
+langchain-openai
+pydantic
+python-dotenv
+python-frontmatter
